@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome to E-commerce</title>
+    <link rel="stylesheet" href="{% static 'conf/css/style.css' %}"/>
+  </head>
+  <body>
+    <div id="welcome" class="welcome">Welcome to E-commerce</div>
+    <a href="http://127.0.0.1:8000/shop/">
+      <div id="box1" class="box box1">Shop</div>
+    </a>
+    <div class="box box2">News</div>
+  </body>
+  <script src="{% static 'conf/js/box_change.js' %}"></script>
+</html>

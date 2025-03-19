@@ -1,0 +1,18 @@
+# Python-generated files
+**/__pycache__
+
+# Virtual environments
+venv/
+
+# Git
+.git
+.gitignore
+
+# Db
+db.sqlite3
+
+# Ruff
+.ruff_cache/
+
+# Readme
+README.md

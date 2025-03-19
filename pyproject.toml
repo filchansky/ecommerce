@@ -1,0 +1,34 @@
+[tool.ruff]
+line-length = 120
+
+lint.select = [
+    "ALL",
+]
+
+lint.ignore = [
+    # modules
+    "ANN",  # flake8 annotations
+
+    # specific rules
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+    "D203",
+    "D212",
+    "F401",
+    "RUF012",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"payment/views.py" = ["RET503"]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+
+[tool.ruff.format]
+quote-style = "single"

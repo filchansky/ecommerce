@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Head imports -->
+    {% include 'shop/_partials/_head_imports.html' %}
+
+    <!-- Title -->
+    <title>{{ title }}</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'shop/css/base.css' %}">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'shop/images/logo_for_e-commerce.jpg' %}">
+
+    <!-- For additional imports -->
+    {% block head %} {% endblock head %}
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    {% include 'shop/_partials/_navbar.html' %}
+    
+    <!-- Messages -->
+    {% include 'shop/_partials/_messages.html' %}
+    
+    <main>
+      <!-- Content -->
+      {% block content %}
+      {% endblock content %}
+    </main>
+    
+    <!-- Footer -->
+    {% include 'shop/_partials/_footer.html' %}
+  </body>
+
+  <!-- Script -->
+  <script src="{% static 'shop/js/base.js' %}"></script>
+  <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+</html>
