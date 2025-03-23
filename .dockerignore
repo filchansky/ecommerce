@@ -8,9 +8,6 @@ venv/
 .git
 .gitignore
 
-# Db
-db.sqlite3
-
 # Ruff
 .ruff_cache/
 

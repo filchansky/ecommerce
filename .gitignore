@@ -9,9 +9,6 @@ wheels/
 # Virtual environments
 venv/
 
-# Db
-db.sqlite3
-
 # Env
 .env
 
